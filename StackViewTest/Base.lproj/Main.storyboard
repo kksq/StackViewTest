@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c48-OS-7zC">
+                                <rect key="frame" x="145" y="120" width="30" height="210"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaY-0C-ra1">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="😊"/>
+                                        <connections>
+                                            <action selector="setClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="SSJ-4s-miF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6U-dP-BSU">
+                                        <rect key="frame" x="0.0" y="30" width="30" height="30"/>
+                                        <state key="normal" title="👊"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLJ-JR-eV1">
+                                        <rect key="frame" x="0.0" y="60" width="30" height="30"/>
+                                        <state key="normal" title="👋"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2q-ij-eEb">
+                                        <rect key="frame" x="0.0" y="90" width="30" height="30"/>
+                                        <state key="normal" title="✌️"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpc-y9-VtU">
+                                        <rect key="frame" x="0.0" y="120" width="30" height="30"/>
+                                        <state key="normal" title="👐"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFa-7V-5gF">
+                                        <rect key="frame" x="0.0" y="150" width="30" height="30"/>
+                                        <state key="normal" title="👌"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vs4-ad-7Bu">
+                                        <rect key="frame" x="0.0" y="180" width="30" height="30"/>
+                                        <state key="normal" title="👍"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="rfd-Jo-aAL"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c48-OS-7zC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="ePz-Ul-udP"/>
+                            <constraint firstItem="c48-OS-7zC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sEQ-QI-EKZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="stackView" destination="c48-OS-7zC" id="pnh-3L-UlQ"/>
+                        <outletCollection property="ops" destination="Vs4-ad-7Bu" id="ew0-JL-yNp"/>
+                        <outletCollection property="ops" destination="wFa-7V-5gF" id="pAU-m2-osD"/>
+                        <outletCollection property="ops" destination="rpc-y9-VtU" id="Qsm-cK-auT"/>
+                        <outletCollection property="ops" destination="a2q-ij-eEb" id="vKx-Ph-FaE"/>
+                        <outletCollection property="ops" destination="TLJ-JR-eV1" id="aL8-QB-es4"/>
+                        <outletCollection property="ops" destination="H6U-dP-BSU" id="a5A-lf-shX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="310"/>
+        </scene>
+    </scenes>
+</document>
